@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_stPrice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:ignore="Autofill,HardcodedText,MissingDefaultResource">
+
+
+        <TextView
+            android:id="@+id/edt_inputnewtaiff"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/name_unit_price_dialog"
+            android:textColorHint="#0277BD"
+            tools:ignore="TextFields,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/location_start" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/to_km" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/price_of_km_dialog" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:src="@drawable/baseline_add_circle_outline_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_Setting"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:src="@drawable/baseline_remove_24"
+        app:layout_constraintLeft_toRightOf="@+id/btn_add"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_Setting"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+</LinearLayout>
+    <Button
+
+    android:id="@+id/btn_done"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@+id/btn_remove"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/rcv_Setting"
+    android:text="@string/done_dialog"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.5"
+            android:text="@string/open_charge" />
+
+        <Switch
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_width="0dp"
+            android:id="@+id/switchOpenFee"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtOpenFee"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="@string/flagfall"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>

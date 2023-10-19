@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_stPrice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boderdlg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,Autofill">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/boderdlg"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E4D6B4"
+            android:src="@drawable/baseline_account_circle_24"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/edt_usernameunitprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:hint="Input Name Unit "
+            android:textColorHint="#0277BD"
+            tools:ignore="TextFields,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#A9E367"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Old Unit Price"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_user"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:background="@drawable/boderspinner"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boder"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ECD93A"
+                android:text="PRICING"
+                tools:ignore="TextContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:text="Price er Kilometer"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_price_Km"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:hint="price"
+                    android:inputType="number"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="VNĐ"
+                    android:id="@+id/unit"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:text="Incurred"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_incurred"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:hint="price"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/unit1"
+                    android:text="VNĐ"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:text="Opening Fee"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_open_fee"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:hint="price"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="VNĐ"
+                    android:id="@+id/unit2"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Other Fees"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:hint="Input Name Other fees"
+                    android:inputType="text"
+                    android:id="@+id/edt_name_other_fees"
+                    android:textSize="13dp"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize,TextSizeCheck" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/edit_price_other"
+                    android:gravity="center"
+                    android:hint="price"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="VNĐ"
+                    android:gravity="center"
+                    android:id="@+id/unit3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ECD93A"
+                android:text="OPTIONS"
+                tools:ignore="TextContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:text="Currency Unit"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_currency"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/boderdlg"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:text="V.A.T Per"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:hint="0.00%"
+                    android:id="@+id/edt_vat"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
