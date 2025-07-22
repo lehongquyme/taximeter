@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16181D"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.teasoft.taxi.meter.HomeActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:weightSum="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtlanguage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="#CE4A4747"
+            android:text="en"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_clock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:fontFamily="@font/clock"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="12:96:00"
+            android:textColor="#752727"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@drawable/baseline_settings_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_durationAndSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_clock">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration_home"
+                android:textColor="#FFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txt_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clock"
+                android:text="00:00:00"
+                android:textColor="#FFFF"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speed_home"
+                android:textColor="#FFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txt_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/clock"
+                android:text="0.0 km/h"
+                android:textColor="#FFFF"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_durationAndSpeed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance_home"
+            android:textColor="#FFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clock"
+            android:text="0.0 Km"
+            android:textColor="#FFFF"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_DurationAndSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#6A3333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_distance"
+        android:orientation="horizontal" />
+
+
+        <TextView
+            android:id="@+id/txt_totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="@string/unit_home"
+            android:textColor="#FFFF"
+            android:textSize="50sp"
+            android:fontFamily="@font/clock"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_DurationAndSpeed"
+            app:layout_constraintBottom_toTopOf="@+id/btn_start"/>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_clock"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/start_home"
+            android:textColor="#FFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

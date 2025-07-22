@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">taxi-meter-android</string>
+
+
+    <string name="name_unit_price_dialog">RIDE PRICE LIST</string>
+    <string name="destance_charge">DESTANCE CHARGE</string>
+    <string name="price_of_km_dialog">Price of Kilometer</string>
+    <string name="open_charge">OPEN CHARGE</string>
+
+    <string name="duration_home">Duration</string>
+    <string name="speed_home">Speed</string>
+    <string name="distance_home">Distance</string>
+    <string name="unit_home">0 $</string>
+    <string name="unit_money">" $"</string>
+    <string name="start_home">Start</string>
+
+    <string name="done_dialog">Done</string>
+    <string name="success_dialog">Success</string>
+    <string name="back_home_dialog">BACK HOME</string>
+    <string name="total">TOTAL</string>
+    <string name="end_dialog">End</string>
+    <string name="flagfall">Flagfall</string>
+    <string name="price">price</string>
+
+    <string name="location_start">Start</string>
+    <string name="end_home">End</string>
+    <string name="to_km">To(Km)</string>
+    <string name="input_price_end">Input Price Km End</string>
+    <string name="input_price">Input Price Of Km </string>
+    <string name="tittle">PRICE</string>
+    <string name="time_home">Time</string>
+    <string name="btn_start">Start</string>
+
+</resources>

@@ -1,0 +1,75 @@
+[versions]
+agp = "8.10.1"
+appcompat = "1.7.1"
+commonsMath3 = "3.6.1"
+composeBomVersion = "2025.07.00"
+constraintlayout = "2.2.1"
+gradle = "8.11.1"
+gson = "2.13.1"
+jakartaActivationApi = "1.2.1"
+javaxActivation = "1.2.0"
+kotlin = "2.0.21"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.9.2"
+activityCompose = "1.10.1"
+composeBom = "2025.07.00"
+material = "1.12.0"
+permissionx = "1.8.1"
+playServicesLocation = "21.3.0"
+playServicesMaps = "19.2.0"
+roomCompiler = "2.7.2"
+roomCompilerVersion = "2.4.3"
+subsamplingScaleImageView = "3.10.0"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-compose-bom-v20250700 = { module = "androidx.compose:compose-bom", version.ref = "composeBomVersion" }
+androidx-compose-material3-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-ui-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-ui-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-compose-ui-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+androidx-room-compiler-v243 = { module = "androidx.room:room-compiler", version.ref = "roomCompilerVersion" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomCompiler" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomCompiler" }
+commons-math3 = { module = "org.apache.commons:commons-math3", version.ref = "commonsMath3" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+jakarta-activation-api = { module = "jakarta.activation:jakarta.activation-api", version.ref = "jakartaActivationApi" }
+javax-activation = { module = "com.sun.activation:javax.activation", version.ref = "javaxActivation" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+material3 = { module = "androidx.compose.material3:material3" }
+permissionx = { module = "com.guolindev.permissionx:permissionx", version.ref = "permissionx" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+subsampling-scale-image-view = { module = "com.davemorrissey.labs:subsampling-scale-image-view", version.ref = "subsamplingScaleImageView" }
+ui = { module = "androidx.compose.ui:ui" }
+ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+

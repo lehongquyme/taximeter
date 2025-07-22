@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">taxi-meter-android</string>
+    <string name="success_dialog">Thành Công</string>
+    <string name="back_home_dialog">TRỞ LẠI</string>
+    <string name="total">TỔNG</string>
+    <string name="flagfall">Giá mở cửa</string>
+    <string name="tittle">GIÁ</string>
+    <string name="duration_home">Khoảng Thời Gian</string>
+    <string name="speed_home">Tốc độ</string>
+    <string name="distance_home">Khoảng cách</string>
+    <string name="time_home">Thời gian</string>
+    <string name="btn_start">Bắt Đầu</string>
+    <string name="name_unit_price_dialog">BẢNG GIÁ ĐI XE</string>
+    <string name="open_charge">GIÁ MỞ CỬA</string>
+    <string name="unit_home">0 VND</string>
+    <string name="unit_money">" VND"</string>
+    <string name="start_home">Bắt Đầu</string>
+    <string name="done_dialog">Xác Nhận</string>
+    <string name="location_start">Bắt đầu</string>
+    <string name="to_km">Đến(Km)</string>
+    <string name="input_price_end">Nhập giá dùng đến cuối quãng đường</string>
+    <string name="destance_charge">PHÍ KHOẢNG CÁCH</string>
+    <string name="price_of_km_dialog">Giá một ki lô mét</string>
+    <string name="end_home">Kết thúc</string>
+    <string name="input_price">Nhập giá km chạy</string>
+    <string name="price">giá tiền</string>
+    <string name="end_dialog">Kết Thúc</string>
+</resources>
